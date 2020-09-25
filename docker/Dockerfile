@@ -16,4 +16,5 @@ COPY ./arm-env /root/.arm-env
 WORKDIR /data
 RUN tar -xvf /data/lab1_package.tar && \
     tar -xvjf /data/lab1_package/gcc-linaro-5.3-20170216.tar.bz2 -C / && \
+    tar -xvf /data/lab1_package/image_new_v11.tar.bz2 && \
     echo "source /root/.arm-env" >> /root/.bashrc
