@@ -1,0 +1,5 @@
+export ARM_GCC_IMX6_V3="/opt/EmbedSky/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin"
+export QMAKE_ARM_IMX6_V3="/opt/EmbedSky/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/qt5.5/rootfs_imx6q_V3_qt5.5_env/qt5.5_env/bin"
+PATH="$PATH:${ARM_GCC_IMX6_V3}:${QMAKE_ARM_IMX6_V3}"
+
+alias arm-gcc=arm-linux-gnueabihf-gcc

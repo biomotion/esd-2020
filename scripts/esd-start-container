@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker run -itd \
+    -v /dev:/dev \
+    -v ${ESD_REPO}:/workspace \
+    -w /workspace \
+    --name esd \
+    --privileged \
+    esd-2020
