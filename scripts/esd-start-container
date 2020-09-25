@@ -1,9 +1,21 @@
 #!/bin/bash
 
-docker run -itd \
-    -v /dev:/dev \
-    -v ${ESD_REPO}:/workspace \
-    -w /workspace \
-    --name esd \
-    --privileged \
-    esd-2020
+status=0
+
+if [ -z ${ESD_REPO} ]; then
+    echo "ESD_REPO Not Set"
+    status=1
+fi
+
+
+if [ $status = 0 ]; then
+    docker run -itd \
+        -v /dev:/dev \
+        -v ${ESD_REPO}:/workspace \
+        -w /workspace \
+        --name esd \
+        --privileged \
+        esd-2020
+else
+    echo "Container Not Started"
+fi
