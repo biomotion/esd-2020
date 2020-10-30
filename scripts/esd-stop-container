@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker stop esd
-docker rm esd
+docker stop $ESD_CONTAINER_NAME
+docker rm $ESD_CONTAINER_NAME
