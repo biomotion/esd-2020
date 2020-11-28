@@ -7,10 +7,10 @@ CFLAGS=-Wall -I /opt/EmbedSky/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/
 -Wl,-rpath-link=/opt/EmbedSky/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/qt5.5/rootfs_imx6q_V3_qt5.5_env/usr/lib/ \
 -lpthread -lopencv_world
 
-EXE_FILE=a.out
+EXE_FILE=lab2-1
 
 all: 
-	${CC} group_07.cpp ${CFLAGS} -o ${EXE_FILE}
+	${CC} lab2-1.cpp ${CFLAGS} -o ${EXE_FILE}
 
 clean: 
 	${RM} ${EXE_FILE}
